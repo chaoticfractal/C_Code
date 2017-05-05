@@ -67,7 +67,6 @@ var=var_sum/data;
    printf("chi-squared=%f\n",chi);
 
 return 0;
-
 }
 
 
