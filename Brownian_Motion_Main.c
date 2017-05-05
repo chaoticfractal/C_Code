@@ -1,4 +1,7 @@
-//Project Source File
+/*****************************************************************************
+This is the main source file for a program that uses the OpenGL library to
+model 1-D Brownian motion of 2 particles
+*****************************************************************************/
 
 #include <stdio.h> 
 #include <stdlib.h>
