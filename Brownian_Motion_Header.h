@@ -1,5 +1,7 @@
-//Project Header File 
-//Contains various function calls to the OpenGL Library
+/******************************************************
+Project Header File 
+Contains various function calls to the OpenGL Library
+******************************************************/
 
 #include <stdio.h> 
 #include <stdlib.h>
