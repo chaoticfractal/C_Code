@@ -2,6 +2,8 @@
 This program adds up 4 sums to show the accurancy of adding large sums on a computer
 The last sums are actually the same sum but added two differnet ways one from the lowest index and one from the 
 highest
+The purpose of this program was to show the round off error that occurs when adding larges sums two differnet
+way
 *************************************************************************************************************/
 
 
