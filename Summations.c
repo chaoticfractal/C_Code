@@ -6,9 +6,6 @@ The purpose of this program was to show the round off error that occurs when add
 way
 *************************************************************************************************************/
 
-
-//Homework 4 
-
 #include<stdio.h>
 #include<math.h> 
 
