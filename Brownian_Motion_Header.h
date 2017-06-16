@@ -1,15 +1,13 @@
 /******************************************************
-Project Header File 
-Contains various function calls to the OpenGL Library
-******************************************************/
+ Project Header File 
+ Contains various function calls to the OpenGL Library
+ ******************************************************/
 
 #include <stdio.h> 
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
 #include <GL/glut.h>
-
-
 
 #define POINTS     800
 #define WINDOWSIZE 1000
@@ -28,11 +26,11 @@ double GaussAdd_1;
 double GaussFac_1;
 double winLimit_1;
 
-void InitGauss (int seed);
-double Gauss ();
-void gfxinit (void);
-void display (void);
-void gfxinit_1 (void);
-void display_1 (void);
-void InitGauss_1 (int seed);
-double Gauss_1 ();
+void InitGauss(int seed);
+double Gauss();
+void gfxinit(void);
+void display(void);
+void gfxinit_1(void);
+void display_1(void);
+void InitGauss_1(int seed);
+double Gauss_1();
