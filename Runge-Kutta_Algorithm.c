@@ -51,7 +51,7 @@ void runge4(double x, double y[], double step) {
 	double f(double x, double y[], int i);
 	double h = step / 2.0, 					//the midpoint
 	t1[N], t2[N], t3[N], 				//temporary storage
-			k1[N], k2[N], k3[N], k4[N]; 			//for Runge-Kutta
+	k1[N], k2[N], k3[N], k4[N]; 			//for Runge-Kutta
 	int i;
 
 	for (i = 0; i < N; i++)
