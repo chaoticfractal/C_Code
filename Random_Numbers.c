@@ -26,7 +26,7 @@ int main()
 
 	if (choose==1)                                               //Homemade random number generator 
 	 {
-		int i, old, randx, randy;
+	  	int i, old, randx, randy;
    
    		FILE *output;		      
    		output = fopen("Rand1.txt","w");
@@ -90,6 +90,8 @@ int main()
 		
 		fclose(output);
     	 }
+
 return 0;
+
 }
 	

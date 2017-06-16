@@ -93,6 +93,7 @@ float Bode(int N)
 }
 
 float Fi(int i,float h)
+
 {
 	return exp(-(float)a-(float)i*h);
 }
