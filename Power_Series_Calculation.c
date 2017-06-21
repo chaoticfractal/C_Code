@@ -53,15 +53,13 @@ int main() {
 		FILE* fo_1 = NULL;
 		fo_1 = fopen("Homework3_Bad.txt", "w");
 		start = clock();
-		for (x1 = 0.0; x1 <= max; x1 += step)
-		{
+		for (x1 = 0.0; x1 <= max; x1 += step){
 			sum1 = 1;
 			i = 0;
-			for (k = 0; k <= 2000; k++) //This is the same case here.                                
-					{
+			for (k = 0; k <= 2000; k++){ //Same Case here
 				i++;
 				up = down = 1;
-				for (j = 1; j <= i; j++) {
+				for (j = 1; j <= i; j++){
 					up *= -x1;
 					down *= j;
 				}
