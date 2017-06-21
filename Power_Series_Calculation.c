@@ -28,12 +28,10 @@ int main() {
 		FILE* fo = NULL;
 		fo = fopen("Homework3.txt", "w");
 		start = clock();
-		for (x = 0.0; x <= max; x += step)
-		{
+		for (x = 0.0; x <= max; x += step) {
 			sum = element = 1.;   //Reset Variable                
 			n = 0;
-			for (n = 0; n <= 11000000; n++) //This is so we can get the program to run for at least 30 secs.
-					{
+			for (n = 0; n <= 11000000; n++) {   //This is so we can get the program to run for at least 30 secs.
 				n++;
 				element *= -x / n;   //Calculates next element       
 				sum += element;
@@ -53,13 +51,13 @@ int main() {
 		FILE* fo_1 = NULL;
 		fo_1 = fopen("Homework3_Bad.txt", "w");
 		start = clock();
-		for (x1 = 0.0; x1 <= max; x1 += step){
+		for (x1 = 0.0; x1 <= max; x1 += step) {
 			sum1 = 1;
 			i = 0;
-			for (k = 0; k <= 2000; k++){ //Same Case here
+			for (k = 0; k <= 2000; k++) { //Same Case here
 				i++;
 				up = down = 1;
-				for (j = 1; j <= i; j++){
+				for (j = 1; j <= i; j++) {
 					up *= -x1;
 					down *= j;
 				}
