@@ -19,13 +19,13 @@ int main() {
 		FILE *output;
 		output = fopen("Printed to 'HW12_Mode_1.txt'", "w");
 		for (i = 1; i <= max; i++) {
-		     x = 0;					 //reset x 
+		       x = 0;					 //reset x 
 			for (j = 1; j <= 10; j++)
-			     x += drand48();	                 //sum of 10 x values 
-			     y += x * x;		         // square and sum up 
+			       x += drand48();	                 //sum of 10 x values 
+			       y += x * x;		         // square and sum up 
 			if (i % (int) (pow(2.0, n)) == 0) {	 // save after 2, 4, 8, 16 ... 
-			    n++;
-		            fprintf(output, "%i\t\t%f\n", i, y / i);
+			      n++;
+		              fprintf(output, "%i\t\t%f\n", i, y / i);
 			}
 		}
 
@@ -39,10 +39,10 @@ int main() {
 		for (i = 1; i <= trials; i++) {
 		     x = 0;					//reset x 
 			for (j = 1; j <= 10; j++)
-			     x += drand48();	   //sum of 10 x values 
-			     y += x * x;          // square and sum up 
-			if (i == trials) {        // print at i=16 trials
-			    printf("The average value after 16 trials is %f\n", y / i);
+			       x += drand48();	                //sum of 10 x values 
+			       y += x * x;                      // square and sum up 
+			if (i == trials) {                      // print at i=16 trials
+			       printf("The average value after 16 trials is %f\n", y / i);
 
 			}
 		}
