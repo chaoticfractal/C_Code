@@ -60,9 +60,8 @@ void main(int argc, char** argv) {
 	glutMainLoop();
 }
 
-void InitGauss(int seed) //Algorthim to generate Gaussian random numbers. First part. 
+void InitGauss(int seed) { //Algorthim to generate Gaussian random numbers. First part. 
 
-		{
 	Nrand = 4;
 	Arand = RANDMAX;
 	GaussAdd = sqrt(3.0 * (double) Nrand);
@@ -70,9 +69,8 @@ void InitGauss(int seed) //Algorthim to generate Gaussian random numbers. First 
 	SEED(seed);
 }
 
-double Gauss() //Second Part to Gaussian random number generator. 
-
-{
+double Gauss() { //Second Part to Gaussian random number generator. 
+	
 	double sum;
 	int i;
 
@@ -82,9 +80,7 @@ double Gauss() //Second Part to Gaussian random number generator.
 	return (GaussFac * sum - GaussAdd);
 }
 
-void InitGauss_1(int seed_1)
-
-{
+void InitGauss_1(int seed_1) {
 	Nrand_1 = 1;
 	Arand_1 = RANDMAX;
 	GaussAdd_1 = sqrt(2.3 * (double) Nrand_1);
@@ -92,9 +88,8 @@ void InitGauss_1(int seed_1)
 	SEED(seed_1);
 }
 
-double Gauss_1()
-
-{
+double Gauss_1() {
+	
 	double sum_1;
 	int i;
 
@@ -104,33 +99,31 @@ double Gauss_1()
 	return (GaussFac_1 * sum_1 - GaussAdd_1);
 }
 
-void gfxinit()
-/* Creates the image  */
-{
+void gfxinit() {  //Creates the image
+
 	int i, j;
 
 	glMatrixMode (GL_PROJECTION);
 	glLoadIdentity();
 	gluOrtho2D(0.0, (double) (POINTS - 1), -winLimit, winLimit);
-	glClearColor(0.0, 0.0, 0.0, 0.0); /* Makes the background Black.  */
-	glColor3f(1.0, 0.0, 0.0); /* Draws first line in Red    */
+	glClearColor(0.0, 0.0, 0.0, 0.0); // Makes the background Black
+	glColor3f(1.0, 0.0, 0.0); // Draws first line in Red
 	glNewList(1, GL_COMPILE);
-	glBegin (GL_LINE_STRIP); /* Draws first line */
+	glBegin (GL_LINE_STRIP); //Draws first line
 	for (i = 0; i < POINTS; i++)
 		glVertex2fv (points[i]);
 	glEnd();
-	glColor3f(255, 0.0, 255); /*Draws second line in Magenta*/
+	glColor3f(255, 0.0, 255); //Draws second line in Magenta
 	glNewList(1, GL_COMPILE);
-	glBegin(GL_LINE_STRIP); /* Draws second line */
+	glBegin(GL_LINE_STRIP); //Draws second line
 	for (j = 0; j < POINTS; j++)
 		glVertex2fv (points_1[j]);
 	glEnd();
 	glEndList();
 }
 
-void display(void)
-/* Clears memory for image */
-{
+void display(void) { //Clears memory for image
+	
 	glClear (GL_COLOR_BUFFER_BIT);
 	glCallList(1);
 	glFlush();
