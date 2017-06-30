@@ -1,6 +1,6 @@
 /******************************************************
  Project Header File 
- Contains various function calls to the OpenGL Library
+ Contains variables declarations and Macro definitions 
  ******************************************************/
 
 #include <stdio.h> 
