@@ -8,7 +8,7 @@
 #include <math.h>
 #include <time.h>
 #include <GL/glut.h>
-#include "Project.h"
+#include "Brownian_Motion_Header.h"
 
 void main(int argc, char** argv) {
 	float motion;
